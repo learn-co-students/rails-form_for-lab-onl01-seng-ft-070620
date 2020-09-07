@@ -1,5 +1,6 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
+source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
@@ -25,9 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
-  gem 'spring'
-  gem 'rspec-rails'
-  gem 'factory_bot_rails', '~>4.8.2'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'factory_bot_rails', '~>4.8.2'
+  gem 'rspec-rails'
+  gem 'spring'
 end
