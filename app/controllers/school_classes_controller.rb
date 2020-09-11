@@ -9,15 +9,15 @@ class SchoolClassesController < ApplicationController
     end
 
     def show
-        @school_class = school_class
+        school_class
     end
 
     def edit
-        @school_class = school_class
+        school_class
     end
 
     def update
-        @school_class = school_class
+        school_class
         @school_class.update(school_class_params)
         redirect_to @school_class
     end
@@ -29,7 +29,7 @@ class SchoolClassesController < ApplicationController
     end
 
     def school_class
-        SchoolClass.find(params[:id])
+        @school_class = SchoolClass.find(params[:id])
     end
 end
   
